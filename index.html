@@ -322,7 +322,7 @@
                         <a href="./index.html" class="logo-link">Web<span class="footer-logo-part">Studio</span></a>
                     </div>
                     
-                    <address>
+                    <address class="footer-address">
                         <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
                         <div class="contacts">
                             <a href="mailto:info@example.com" class="contact-footer">info@example.com</a>
@@ -363,12 +363,87 @@
                         </li>
                     </ul>
                 </div>
+                <div class="follow">
+                    <h3 class="join-text">Подпишитесь на рассылку</h3>
+                    <form class="follow-us">
+                        <label class="follow-label" for="follow"></label>
+                        <input class="follow-form" type="email" name="follow" id="follow" placeholder="E-mail">
+                        <button class="follow-submit" type="submit">
+                            <span>Подписаться</span> 
+                            <svg class="icon-follow" width="24" height="24">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
                 
             </div>                  
         </footer>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="modal-close" type="button" data-modal-close></button>
+                <button class="modal-close" type="button" data-modal-close>
+                    <span> class="icon-container">
+                        <svg class="icon-close" width="18" height="18">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </span>
+                   
+                </button>
+                <div class="form-container">
+                    <p class="callback">Оставьте свои данные, мы вам перезвоним</p>
+                    <form class="modal-form">
+                        <div class="field-container">
+                            <label class="modal-label" for="name">Имя</label>
+                            <div class="input-container">
+                                <input class="modal-input" type="text" name="name" id="name">
+                                <svg class="icon-modal" width="18" height="18">
+                                    <use href="./images/icons.svg#icon-person"> </use>
+                                </svg>
+                            </div>
+                        </div>
+                                               
+                        <div class="field-container">   
+                            <label class="modal-label" for="tel">Телефон</label>
+                            <div class="input-container">
+                                <input class="modal-input" type="tel" name="tel" id="tel">
+                                <svg class="icon-modal" width="18" height="18">
+                                    <use href="./images/icons.svg#icon-phone-modal"></use>
+                                </svg>
+                            </div>
+                            
+                        </div>
+                                                
+                        <div class="field-container">
+                            <label class="modal-label" for="email">Почта</label>
+                            <div class="input-container">
+                                <input class="modal-input" type="email" name="email" id="email">
+                                <svg class="icon-modal" width="18" height="18">
+                                    <use href="./images/icons.svg#icon-email-modal"></use>
+                                </svg>
+                            </div>
+                           
+                        </div>
+                        
+                        <div class="field-container">
+                            <label class="modal-label" for="comment">Комментарий</label>
+                            <textarea class="comments" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                        </div>                       
+                                        
+                        <div class="checkbox-container">
+                            <label class="modal-label" for="policy">
+                                <input class="checkbox" type="checkbox" name="policy" id="policy">
+                                <span class="policy-text">Соглашаюсь с рассылкой и принимаю <a class="terms" href="">Условия договора</a></span> 
+                                <span class="checkbox-icon"></span>
+                                <svg class="icon-checked" width="16" height="15">
+                                    <use href="./images/icons.svg#icon-check"></use>
+                                </svg>                                                                                       
+                            </label>
+                        </div>
+                           
+                                          
+                        <button class="submit" type="submit">Отправить</button>
+                    </form>
+                </div>
             </div>
         </div>
         <script src="./js/modal.js"></script>
